@@ -1,0 +1,57 @@
+.navbar-headline {
+    font-size: 45px !important;
+}
+
+.card-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-deck {
+    width: 50%;
+    height: 80%;
+    background-color: #000000 !important;
+}
+
+.card-answer-area {
+    background-color: blue !important;
+}
+
+.answer {
+    margin-bottom: 10px;
+    background-color: rgb(74, 74, 222) !important;
+}
+
+.answer-size {
+    font-size: 35px;
+    padding: 0 !important;
+    text-align: center;
+}
+
+.quest-footer {
+    width: 100%;
+    height: 40px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 1px solid rgba(0,0,0,0.4);
+}
+
+.quest-number {
+    font-family: 'Shantell Sans', cursive;
+}
+
+.next-question {
+    height: 30px;
+    width: 100px;
+    font-family: 'Shantell Sans', cursive;
+    border: 0;
+    background-color: rgb(74, 74, 222);
+    border-radius: 5px 5px 5px 5px;
+}

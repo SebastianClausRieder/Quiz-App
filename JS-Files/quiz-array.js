@@ -1,6 +1,6 @@
 let questions = [
     {
-        "question": "wie lange dauerte der 30-jährige Krieg?",
+        "question": "Wie lange dauerte der 30-jährige Krieg?",
         "answer_1": "27 Jahre",
         "answer_2": "30 Jahre",
         "answer_3": "76 Jahre",
@@ -40,3 +40,5 @@ let questions = [
         "right_answer": 3
     }
 ];
+
+let currentQuestion = 0;

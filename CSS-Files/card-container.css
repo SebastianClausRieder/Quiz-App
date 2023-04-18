@@ -3,7 +3,7 @@
 }
 
 .card-container {
-    height: 100vh;
+    height: calc(100vh - 80px);
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -13,11 +13,16 @@
 .card-deck {
     width: 50%;
     height: 80%;
+    display: none !important;
     background-color: #000000 !important;
 }
 
 .card-answer-area {
     background-color: blue !important;
+}
+
+.card-title {
+    text-align: center;
 }
 
 .answer {

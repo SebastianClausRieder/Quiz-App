@@ -28,6 +28,9 @@
   <!-- CSS -->
   <link rel="stylesheet" href="CSS-Files/card-container.css">
   <link rel="stylesheet" href="CSS-Files/fonts.css">
+  <!-- JS -->
+  <script src="JS-Files/quiz-array.js"></script>
+  <script src="JS-Files/functions.js"></script>
   <!-- CSS Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -43,51 +46,56 @@
       background-color: rgb(218, 216, 87) !important;
       color: antiquewhite;
     }
+
+    .d-none {
+      display: none;
+    }
+
+    .d-show {
+      display: flex !important;
+    }
   </style>
 </head>
 
-<body>
+<body onload="quizStart()">
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1 font-carattere navbar-headline">Quiz-App</span>
+    </div>
+  </nav>
+  <div class="card-container" id="card-container">
+    <button type="button" class="btn btn-primary btn-lg font-windsong" id="quiz-start-button" onclick="showQuestion()"><b>Quiz Start</b></button>
+    <div class="card card-deck" id="card-deck">
+      <img src="img/card-background.png" class="card-img-top">
+      <div class="card-body card-answer-area">
+        <h4 class="card-title font-windsong"><b id="question"></b></h4>
+        <div class="card answer">
+          <div class="card-body font-passions-conflict answer-size" id="answer-1">
+          </div>
+        </div>
+        <div class="card answer">
+          <div class="card-body font-passions-conflict answer-size" id="answer-2">
+          </div>
+        </div>
+        <div class="card answer">
+          <div class="card-body font-passions-conflict answer-size" id="answer-3">
+          </div>
+        </div>
+        <div class="card answer">
+          <div class="card-body font-passions-conflict answer-size" id="answer-4">
+          </div>
+        </div>
+      </div>
+      <div class="quest-footer ">
+        <div class="quest-number">
+          Frage <b id="quiz-position">1</b> von <b id="quiz-length"></b>
+        </div>
+        <button class="next-question">Weiter</button>
+      </div>
+    </div>
+  </div>
 
 
 </body>
-<nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <span class="navbar-brand mb-0 h1 font-carattere navbar-headline">Quiz-App</span>
-  </div>
-</nav>
-<div class="card-container">
-  <div class="card card-deck">
-    <img src="img/card-background.png" class="card-img-top">
-    <div class="card-body card-answer-area">
-      <h3 class="card-title font-windsong">Frage 1</h3>
-      <div class="card answer">
-        <div class="card-body font-passions-conflict answer-size">
-          This is some text within a card body.
-        </div>
-      </div>
-      <div class="card answer">
-        <div class="card-body font-passions-conflict answer-size">
-          This is some text within a card body.
-        </div>
-      </div>
-      <div class="card answer">
-        <div class="card-body font-passions-conflict answer-size">
-          This is some text within a card body.
-        </div>
-      </div>
-      <div class="card answer">
-        <div class="card-body font-passions-conflict answer-size">
-          This is some text within a card body.
-        </div>
-      </div>
-    </div>
-    <div class="quest-footer ">
-      <div class="quest-number">
-        Frage <b>1</b> von <b>5</b>
-      </div>
-      <button class="next-question">Weiter</button>
-    </div>
-  </div>
-</div>
 
 </html>

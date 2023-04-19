@@ -65,6 +65,7 @@
   </nav>
   <div class="card-container" id="card-container">
     <button type="button" class="btn btn-primary btn-lg font-windsong" id="quiz-start-button" onclick="showQuestion()"><b>Quiz Start</b></button>
+    <div class="quiz-finish" id="quiz-finish"></div>
     <div class="card card-deck" id="card-deck">
       <img src="img/card-background.png" class="card-img-top">
       <div class="card-body card-answer-area">
@@ -88,9 +89,9 @@
       </div>
       <div class="quest-footer ">
         <div class="quest-number">
-          Frage <b id="quiz-position">1</b> von <b id="quiz-length"></b>
+          Frage <b id="quiz-position"></b> von <b id="quiz-length"></b>
         </div>
-        <button class="next-question">Weiter</button>
+        <button class="next-question" onclick="showQuestion(), quizPosition()">Weiter</button>
       </div>
     </div>
   </div>

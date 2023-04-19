@@ -42,3 +42,4 @@ let questions = [
 ];
 
 let currentQuestion = 0;
+let currentQuizPosition = 1;

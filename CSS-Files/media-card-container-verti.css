@@ -1,0 +1,28 @@
+@media all and (max-width: 600px) {
+    
+    .card-deck {
+        width: 90%;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+    .answer {
+        height: 40px !important;
+    }
+
+    .answer:hover {
+        background-color: rgb(74, 74, 222) !important;
+    }
+
+    .answer-size {
+        font-size: 30px;
+    }
+
+    .next-question {
+        height: 25px;
+    }
+    .quiz-finish {
+        background-size: cover;
+    }
+}

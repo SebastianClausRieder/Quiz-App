@@ -28,6 +28,11 @@
 .answer {
     margin-bottom: 10px;
     background-color: rgb(74, 74, 222) !important;
+    cursor: pointer;
+}
+
+.answer:hover {
+    background-color: blueviolet !important;
 }
 
 .answer-size {

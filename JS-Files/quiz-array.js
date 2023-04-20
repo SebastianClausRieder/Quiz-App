@@ -8,7 +8,7 @@ let questions = [
         "right_answer": 2
     },
     {
-        "question": "Du hast eine gefüllte Streichholzschachtel und kommst in einen leeren, kalten Raum, in dem sich nur ein Kohleofen, eine Petroleumlampe und ein Kamin steht. Was zündest du zuerst an?",
+        "question": "Du hast eine gefüllte Streichholzschachtel und kommst in einen leeren, kalten Raum, in dem sich nur ein Kohleofen, eine Petroleumlampe und ein Kamin befindet. Was zündest du zuerst an?",
         "answer_1": "Der Kohleofen",
         "answer_2": "Der Kamin",
         "answer_3": "Das Streichholz",
@@ -43,3 +43,4 @@ let questions = [
 
 let currentQuestion = 0;
 let currentQuizPosition = 1;
+let yourRightAnswers = 0;

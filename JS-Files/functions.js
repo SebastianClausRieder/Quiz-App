@@ -26,3 +26,19 @@ function showQuestion() {
 function quizPosition() {
     document.getElementById('quiz-position').innerHTML = currentQuizPosition+= 1;
 }
+
+function answer(answer) {
+    let questPosition = currentQuestion - 1;
+    let rightAnswer = questions[questPosition];
+    let rightID = 'card_color_'+rightAnswer['right_answer'];
+    let notRightID = 'card_color_'+answer;
+
+    if (answer == rightAnswer['right_answer']) {
+        document.getElementById(rightID).classList.add('bg-green');
+        console.log('Richtig!!');
+    } else {
+        document.getElementById(rightID).classList.add('bg-green');
+        document.getElementById(notRightID).classList.add('bg-red');
+        console.log('Falsch');
+    }
+}

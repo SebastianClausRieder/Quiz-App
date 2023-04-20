@@ -6,6 +6,8 @@ function quizStart() {
 function showQuestion() {
     document.getElementById('quiz-start-button').classList.add('d-none');
     document.getElementById('card-deck').classList.add('d-show');
+    document.getElementById('answer-done').classList.remove('d-show');
+    document.getElementById('quiz-finish').classList.remove('d-show');
     
     let question = questions[currentQuestion];
 
@@ -19,8 +21,15 @@ function showQuestion() {
         currentQuestion+= 1;
     } else {
         document.getElementById('card-deck').classList.remove('d-show');
+        document.getElementById('quiz-finish').classList.add('d-show');
+        document.getElementById('right-answers').innerHTML = `${yourRightAnswers}`;
+        currentQuestion = 0;
+        currentQuizPosition = 0;
     }
-    
+    document.getElementById('card_color_1').classList.remove('bg-green', 'bg-red');
+    document.getElementById('card_color_2').classList.remove('bg-green', 'bg-red');
+    document.getElementById('card_color_3').classList.remove('bg-green', 'bg-red');
+    document.getElementById('card_color_4').classList.remove('bg-green', 'bg-red');
 }
 
 function quizPosition() {
@@ -35,10 +44,11 @@ function answer(answer) {
 
     if (answer == rightAnswer['right_answer']) {
         document.getElementById(rightID).classList.add('bg-green');
-        console.log('Richtig!!');
+        document.getElementById('answer-done').classList.add('d-show');
+        yourRightAnswers+= 1;
     } else {
         document.getElementById(rightID).classList.add('bg-green');
         document.getElementById(notRightID).classList.add('bg-red');
-        console.log('Falsch');
+        document.getElementById('answer-done').classList.add('d-show');
     }
 }

@@ -73,7 +73,12 @@
   </nav>
   <div class="card-container" id="card-container">
     <button type="button" class="btn btn-primary btn-lg font-windsong" id="quiz-start-button" onclick="showQuestion()"><b>Quiz Start</b></button>
-    <div class="quiz-finish" id="quiz-finish"></div>
+    <div class="quiz-finish font-passions-conflict" id="quiz-finish">
+      <span class="congratulations">Gratuliere! Du hast es geschaft!</span>
+      <span class="congratulations">Sieh dir dein ergebnis an.</span>
+      <span class="congratulations">Du hast <b id="right-answers"></b> von <b>5</b> Fragen Richtig beantwortet.</span>
+      <button type="button" class="btn btn-primary btn-lg font-windsong" id="quiz-start-button" onclick="showQuestion()"><b>Quiz neu starten</b></button>
+    </div>
     <div class="card card-deck" id="card-deck">
       <img src="img/card-background.png" class="card-img-top">
       <div class="card-body card-answer-area">
@@ -94,6 +99,7 @@
           <div class="card-body font-passions-conflict answer-size" id="answer-4">
           </div>
         </div>
+        <div class="answer-done" id="answer-done"></div>
       </div>
       <div class="quest-footer ">
         <div class="quest-number">
